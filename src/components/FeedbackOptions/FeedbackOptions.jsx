@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { Button, List, Item } from "./FeedbackOptions.styled"
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
-    const { good, neutral, bad } = options;
   return (
     <List>
         <Item><Button onClick={() => onLeaveFeedback(`good`)}>Good</Button></Item> 
